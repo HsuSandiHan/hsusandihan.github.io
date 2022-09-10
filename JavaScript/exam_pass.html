@@ -37,27 +37,39 @@
             console.log(js);
 
             if (html > 100 || css > 100 || js > 100){
-                document.write('<h1>The Exam Result is Error.</h1>');
-            } else if (html < 50 || css < 50 || js < 50){
-                document.write('<h1>'+name+' is Fail!. </h1>');
+                document.write('<h1> The Exam Result is Error.</h1>');
+            } else if (html < 50 && css < 50 && js < 50){
+                document.write('<h1> Sorry, '+name+' Fails with '+html+'marks in HTML, '+css+'marks in CSS and '+js+'marks in JavaScript. </h1>');
+            }else if (html < 50 && css < 50){
+                document.write('<h1> Sorry, '+name+' Fails with '+html+'marks in HTML and '+css+'marks in CSS. </h1>');
+            }else if (html < 50 && js < 50){
+                document.write('<h1> Sorry, '+name+' Fails with '+html+'marks in HTML and '+js+'marks in JavaScript. </h1>');
+            }else if (css < 50 && js < 50){
+                document.write('<h1> Sorry, '+name+' Fails with '+css+'marks in CSS and '+js+'marks in JavaScript. </h1>');
+            }else if (html < 50){
+                document.write('<h1> Sorry, '+name+' Fails in HTML with '+html+'marks. </h1>');
+            }else if (css < 50){
+                document.write('<h1> Sorry, '+name+' Fails in CSS with '+css+'marks. </h1>');
+            }else if (js < 50){
+                document.write('<h1> Sorry, '+name+' Fails in JavaScript with '+js+'marks. </h1>');
             }else if (html >= 81 && css >= 81 && js >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+html+'marks of HTML,'+css+'marks of CSS and '+js+'marks of JavaScript. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destinations in HTML with '+html+'marks , in CSS with '+css+'marks and in JavaScript with '+js+'marks. </h1>');
             }else if (html >= 81 && css >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+html+'marks of HTML and '+css+'marks of CSS. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destinations in HTML with '+html+'marks and in CSS with '+css+'marks. </h1>');
             }else if (html >= 81 && js >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+html+'marks of HTML and '+js+'marks of JavaScript. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destinations in HTML with'+html+'marks and in JavaScript with '+js+'marks. </h1>');
             }else if (css >= 81 && js >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+css+'marks of CSS and '+js+'marks of JavaScript. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destinations in CSS with '+css+'marks and in JavaScript with '+js+'marks. </h1>');
             }else if (html >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with '+html+'marks of HTML Destination. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destination with '+html+'marks in HTML. </h1>');
             }else if (css >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with '+css+'marks of CSS Destination. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destination with '+css+'marks in CSS . </h1>');
             }else if (js >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with '+js+'marks of JavaScript Destination. </h1>');
+                document.write('<h1> Congratulation!! '+name+' Passes out with Destination with '+js+'marks of JavaScript. </h1>');
             }else if (html >= 50 && css >= 50 && js >= 50){
-                document.write('<h1> '+name+' is Pass. </h1>');
+                document.write('<h1> '+name+' got a Pass. </h1>');
             }else {
-                document.write('<h1>'+name+' is Fail! </h1>');
+                document.write('<h1>'+name+' Got a Fail! </h1>');
             }
         }
     </script>
