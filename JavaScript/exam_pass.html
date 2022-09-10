@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Assignment3 Exam Result</title>
+    <title>Assignment4 Exam Result</title>
 </head>
 <body>
     <h1>Exam Pass</h1>
@@ -40,9 +40,23 @@
                 document.write('<h1>The Exam Result is Error.</h1>');
             } else if (html < 50 || css < 50 || js < 50){
                 document.write('<h1>'+name+' is Fail!. </h1>');
-            }else if (html >= 81 || css >= 81 || js >= 81){
-                document.write('<h1> Congratulation!! '+name+' is Pass with Destination. </h1>');
+            }else if (html >= 81 && css >= 81 && js >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+html+'marks of HTML,'+css+'marks of CSS and '+js+'marks of JavaScript. </h1>');
+            }else if (html >= 81 && css >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+html+'marks of HTML and '+css+'marks of CSS. </h1>');
+            }else if (html >= 81 && js >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+html+'marks of HTML and '+js+'marks of JavaScript. </h1>');
+            }else if (css >= 81 && js >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with Destnations, '+css+'marks of CSS and '+js+'marks of JavaScript. </h1>');
+            }else if (html >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with '+html+'marks of HTML Destination. </h1>');
+            }else if (css >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with '+css+'marks of CSS Destination. </h1>');
+            }else if (js >= 81){
+                document.write('<h1> Congratulation!! '+name+' is Pass with '+js+'marks of JavaScript Destination. </h1>');
             }else if (html >= 50 && css >= 50 && js >= 50){
+                document.write('<h1> '+name+' is Pass. </h1>');
+            }else {
                 document.write('<h1>'+name+' is Fail! </h1>');
             }
         }
