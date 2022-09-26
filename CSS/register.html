@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Register</title>
+    <link rel="stylesheet" href="register.css">
 </head>
-<body>
+<body class="body">
     <h1>Student Register</h1>
-    <form action="">
+    <form action="" class="form">
         <label for="name">Name</label>
-        <input type="text" placeholder="Mg Mg" id="name">
+        <input type="text" placeholder="Mg Mg" id="name" readonly>
         <br><br>
         <label for="email">E-mail</label>
         <input type="email" placeholder="example@gmail.com" id="email">
@@ -36,8 +37,8 @@
             <label for="highschool">High School (10th)</label>
         </div>
         <div>
-            <input type="checkbox" id="">
-            <label for="higherschool">High School (12th)</label>
+            <input type="checkbox" id="" disabled>
+            <label for="higherschool">Higher School (12th)</label>
         </div>
         <div>
             <input type="checkbox" id="">
@@ -64,12 +65,17 @@
                 <li>This is first rule.</li>
                 <li>This is second rule.</li>
                 <li>This is third rule.</li>
+        
             </ul>
         </fieldset>
 
         <p></p>
-        <p>Thank You!</p>
+        <p class="thank_you">Thank You!</p>
         <p></p>
+
+        <br>
+
+        <div></div>
     </form>
 </body>
 </html>

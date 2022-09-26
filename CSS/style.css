@@ -1,3 +1,7 @@
+h1{
+    text-align: center;
+    color: red;
+}
 /* attribute selector*/
 a[title="google"] {
     color:red;
@@ -53,4 +57,30 @@ p:target {
 div:target {
     color:aqua;
     border: 1px solid black;
+}
+
+/* Border */
+.border1 {
+    border: 2px dashed red;
+}
+
+.border2 {
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+}
+
+.borderwidth {
+    border-width: thin;
+    border-style: solid;
+}
+
+.borderStyle {
+    /* border-style: dashed; */
+    /* all four T R B L */
+    /* border-style: dashed solid; */
+    /*  T B / L R */
+    /* border-style: solid dotted double; */
+    /* T / L R / B */
+    border-style:dashed solid double dotted;
+    /* T / R / B / L */
 }
