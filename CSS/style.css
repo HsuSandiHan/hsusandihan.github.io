@@ -34,16 +34,13 @@ a[title="google"] {
 a:link{
     color:red;
 }
-
 a:hover{
     color:rgb(59, 7, 82);
     word-spacing: 10px;
 }
-
 a:active{
     color:rgb(255, 145, 0);
 }
-
 a:visited{
     color:darkgreen;
 }
@@ -53,7 +50,6 @@ p:target {
     color:red;
     border: 1px solid black;
 }
-
 div:target {
     color:aqua;
     border: 1px solid black;
@@ -63,17 +59,14 @@ div:target {
 .border1 {
     border: 2px dashed red;
 }
-
 .border2 {
     border-left: 4px solid red;
     border-right: 4px solid red;
 }
-
 .borderwidth {
     border-width: thin;
     border-style: solid;
 }
-
 .borderStyle {
     /* border-style: dashed; */
     /* all four T R B L */
@@ -83,4 +76,89 @@ div:target {
     /* T / L R / B */
     border-style:dashed solid double dotted;
     /* T / R / B / L */
+}
+
+/* Margin (left place from document or if there is HTML code, it left place from that code) */
+.margin1 {
+    border: 1px solid black;
+    margin: 50px;
+}
+.margin2 {
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Padding (left place from border) */
+.padding {
+    border: 1px solid green;
+    padding: 40px;
+}
+
+/* Inline Layout( inline ka letter shi ta lout pe place u tl, can't be designed by own) */
+.inline{
+    border: 1px solid black; 
+    width: 300px;
+    display: inline-block;
+}
+
+/* Block Layout (block ka full place u tl, can be designed*/
+.block {
+    border: 1px solid black;
+    width: 300px;
+    display: inline-block;
+}
+
+/*Float */
+.float_left img {
+    width: 40%;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.float_right img {
+    width: 40%;
+    float: right;
+}
+
+/* grid */
+.grid1 div, 
+.grid2 div,
+.grid3 div,
+.grid4 div,
+.grid5 div,
+.grid6 div {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid2 {
+    grid-column-gap: 50px;
+}
+.grid3 {
+    grid-row-gap: 40px;
+}
+.grid4 {
+    grid-gap: 40px;
+}
+
+/* Adding columns (at the place you want to start adding, you have to name something)*/
+.columnAdd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* Adding rows */
+.rowAdd {
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
