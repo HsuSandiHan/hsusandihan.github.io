@@ -162,3 +162,52 @@ div:target {
     grid-row-start: 2;
     grid-row-end: 4;
 }
+
+/* Position (if you use position, don't use margin, can use top bottom left right)*/
+/* Relative(it place from above HTML element) */
+.relative_parent {
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+.relative {
+    border: 1px solid yellow;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+/* Absolute (place from document) */
+.absolute_parent {
+    border: 1px solid green;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+.absolute {
+    border: 1px solid brown;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+/* Postion Fixed ( place from document, place ko mention htar mha appear phit lr ml, its place is fixed)*/
+.fixed {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+}
+/* Font */
+.online {
+    font-family: 'Lobster', cursive;
+}
+@font-face{
+    src: url(space/SpaceMono-Regular.ttf);
+    font-family: Space;
+}
+.offline{
+    font-family: Space;
+}

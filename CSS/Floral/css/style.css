@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.brand_name {
+    position: absolute;
+    top: 25px;
+    left: 85px;
+}
+.navbar ul{
+    float: right;
+}
+.navbar div {
+    display: inline-block;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 20px;
+    letter-spacing: 0.5mm;
+}
